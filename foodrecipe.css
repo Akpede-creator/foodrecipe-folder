@@ -2,8 +2,14 @@
     font-family: "Young Serif", serif;
     
   }
-
+.outfit-uniquifier {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
   /* the root elements for styling */
+
 :root{
 --White: hsl(0, 0%, 100%);
 --Stone100: hsl(30, 54%, 90%);
@@ -17,16 +23,18 @@
 
 }
 /* styles for the body */
+
 body{
     background-color: var(--Stone100);
-    font-weight: lighter;
     color: var(--Stone900);
     position: relative;
-    font-family: var(--font-heebo);
+    font-family: "Outfit", serif;
     vertical-align: 300px;
     line-height: 25px;
 }
+
 /* styles for the container */
+
 .container{
     display: flex;
     background-color: #ddd;
@@ -39,11 +47,17 @@ body{
     gap: 200px;
     
 }
-/* styles for the div inside the div .
-  */
+/* container hover style */
+
+.container:hover{
+    cursor: pointer;}
+
+/* styles for the div inside the div*/
+
 .secondcontainer{
     background-color: var(--Rose50); 
     padding: 25px;
+    padding-top: 10px;
     border-radius: 25px;
     height: 140px;
     margin-top: 30px;
@@ -78,4 +92,7 @@ h1, h2 {
 }
 .firstunlist, h3{
     color: var(--Rose800);
+}
+li::marker{
+    color: var(--Brown800);
 }
