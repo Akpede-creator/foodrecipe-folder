@@ -99,7 +99,6 @@ li::marker{
     color: var(--Brown800);
 }
 
-...existing code...
 
 /* Media queries for mobile responsiveness */
 @media (max-width: 768px) {
